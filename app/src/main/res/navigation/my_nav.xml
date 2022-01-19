@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/sevgiInfoFragment"
+        android:name="Fragments.SevgiInfoFragment"
+        android:label="SevgiInfoFragment" />
+    <fragment
+        android:id="@+id/sevgiFragment"
+        android:name="Fragments.SevgiFragment"
+        android:label="fragment_sevgi"
+        tools:layout="@layout/fragment_sevgi" />
+    <fragment
+        android:id="@+id/soginchInfoFragment"
+        android:name="Fragments.SoginchInfoFragment"
+        android:label="SoginchInfoFragment" />
+    <fragment
+        android:id="@+id/sogichFragment2"
+        android:name="Fragments.SogichFragment"
+        android:label="fragment_sogich"
+        tools:layout="@layout/fragment_sogich" />
+    <fragment
+        android:id="@+id/tabrikFragment"
+        android:name="Fragments.TabrikFragment"
+        android:label="fragment_tabrik"
+        tools:layout="@layout/fragment_tabrik" />
+    <fragment
+        android:id="@+id/tabrikInfoFragment"
+        android:name="Fragments.TabrikInfoFragment"
+        android:label="TabrikInfoFragment" />
+    <fragment
+        android:id="@+id/dostlikFragment"
+        android:name="Fragments.DostlikFragment"
+        android:label="fragment_dostlik"
+        tools:layout="@layout/fragment_dostlik" />
+    <fragment
+        android:id="@+id/otaOnaFragments"
+        android:name="Fragments.OtaOnaFragments"
+        android:label="fragment_ota_ona_fragments"
+        tools:layout="@layout/fragment_ota_ona_fragments" />
+    <fragment
+        android:id="@+id/hazilFragment"
+        android:name="Fragments.HazilFragment"
+        android:label="fragment_hazil"
+        tools:layout="@layout/fragment_hazil" />
+    <fragment
+        android:id="@+id/saqlanganlarFragment"
+        android:name="Fragments.SaqlanganlarFragment"
+        android:label="fragment_saqlanganlar"
+        tools:layout="@layout/fragment_saqlanganlar" />
+    <fragment
+        android:id="@+id/yangiliariFragment"
+        android:name="Fragments.YangiliariFragment"
+        android:label="fragment_yangiliari"
+        tools:layout="@layout/fragment_yangiliari" />
+</navigation>

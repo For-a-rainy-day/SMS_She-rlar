@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="Fragments.SaqlanganlarFragment">
+
+    <ImageView
+        android:id="@+id/btn_back7"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/ic_back"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:paddingLeft="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size_30dp"
+        android:text="SAQLANGAN \nSHE`RLAR"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/SaqlanganRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_sevgi" />
+
+</LinearLayout>

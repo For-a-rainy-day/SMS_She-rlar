@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="@dimen/size_20dp"
+    android:layout_marginTop="@dimen/size_10dp"
+    app:cardCornerRadius="@dimen/size_12dp"
+    app:cardElevation="@dimen/size_10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        app:cardCornerRadius="@dimen/size_12dp"
+        app:cardElevation="@dimen/size_10dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TabrikINfoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:text="sher nomi"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TabrikINfoQator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:text="@string/SHER"
+                android:layout_marginBottom="10sp"
+                android:layout_marginLeft="40sp"
+                android:textSize="@dimen/text_15sp" />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintTop_toBottomOf="@id/card1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="55sp"
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_message3"
+            android:layout_width="70sp"
+            android:layout_height="40sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="80sp"
+            app:cardCornerRadius="@dimen/size_12dp"
+            app:cardElevation="@dimen/size_10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@id/card_heart3">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:src="@drawable/messagee" />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="70sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/card_heart3"
+            android:layout_marginLeft="5sp"
+            app:layout_constraintLeft_toLeftOf="@id/card_message3"
+            app:layout_constraintRight_toRightOf="@id/card_share3"
+            app:cardCornerRadius="@dimen/size_12dp"
+            app:cardElevation="@dimen/size_10dp"
+            android:layout_height="40sp">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:src="@drawable/heartt"
+                />
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="70sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/card_share3"
+            app:layout_constraintRight_toRightOf="@id/card_copy3"
+            app:layout_constraintLeft_toLeftOf="@id/card_heart3"
+            app:cardCornerRadius="@dimen/size_12dp"
+            app:cardElevation="@dimen/size_10dp"
+            android:layout_height="40sp">
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:src="@drawable/sharee"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_copy3"
+            android:layout_width="70sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="70sp"
+            app:cardCornerRadius="@dimen/size_12dp"
+            app:cardElevation="@dimen/size_10dp"
+            app:layout_constraintLeft_toLeftOf="@id/card_share3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"
+                android:src="@drawable/copyy" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
